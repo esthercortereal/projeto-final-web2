@@ -1,0 +1,124 @@
+
+html {
+	height: auto;
+	width: auto;
+}
+body{
+	background-color: 	#543210;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.container3{
+	display: grid;
+	width: auto;
+	height: auto;
+	grid-template-columns:      450px 449px 449px;
+	grid-template-rows:   90px
+												 35px
+												400px 
+												400px 
+												90px;
+	grid-template-areas:          "nav1          nav1           nav1"
+																"subnav1       subnav1         subnav1"
+																"bloco1    maincontent1    maincontent1"
+																"foto1     maincontent1    maincontent1"
+
+																 "footer1     footer1        footer1";
+}
+
+
+/*---------------------------------------*/
+.nav{
+	grid-area: nav1;
+	background-color: #eddc87;
+	padding-top: 40px;
+	text-align: center;
+	overflow: hidden;
+
+}
+.nav a {
+	color: #c3b51d;
+	text-decoration: none;
+	padding: 100px 100px;
+	font-family: Courier New;
+}
+.nav a:hover {
+	background: #c3b51d;
+	color:  #eddc87;
+}
+.subnav{
+	grid-area: subnav1;
+	background-color: #c3b51d;
+	text-align: center;
+	padding-block: 10px;
+	overflow: hidden;
+
+}
+.subnav a {
+	color: #eddc87;
+	text-decoration: none;
+	padding: 15px;
+	font-family: Courier New;
+}
+.subnav a:hover {
+	background: #eddc87;
+	color:#c3b51d;
+}
+
+
+
+/*------------------------------------------------*/
+.bloco{
+	grid-area: bloco1;
+	background-size: 450px 400px;
+	background-image: url('fearlessstolengrid.jpg');
+	margin: 2px;
+}
+.foto{
+	grid-area: foto1;
+	background-size: 450px 400px;
+	background-image: url('fearlesstvgrid.jpg');
+	margin: 2px;
+}
+.maincontent{
+	grid-area: maincontent1;
+	background-color:#d5b048;
+	margin: 2px;
+	text-align: center;
+}
+h1{
+	font-family: "Arsenal", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-align: center;
+	font-size: 30pt;
+}
+h4{
+	font-family: 'Courier New';
+	font-size: 15pt;
+	padding-left: 7%;
+	width:85%;
+}
+
+/*-------------------------------*/
+
+.footer{
+	grid-area: footer1;
+	background-color: #eddc87;
+	margin: 2px;
+	padding-top:40px;
+	text-align: center;
+	overflow: hidden;
+}
+.footer a {
+	color:  #c3b51d;
+	text-decoration: none;
+	padding: 100px 100px;
+	font-family: Courier New;
+}
+.footer a:hover {
+	background: #c3b51d;
+	color:  #eddc87;
+}

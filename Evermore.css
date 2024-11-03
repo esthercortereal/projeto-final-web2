@@ -1,0 +1,129 @@
+
+html {
+	height: auto;
+	width: auto;
+}
+body{
+	background-color: #382323;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.container3{
+	display: grid;
+	width: auto;
+	height: auto;
+	grid-template-columns:      450px 449px 449px;
+	grid-template-rows:   90px
+												 35px
+												200px 
+												400px 
+												90px;
+	grid-template-areas:          "nav1          nav1           nav1"
+																"subnav1       subnav1         subnav1"
+																"bloco1    maincontent1    maincontent1"
+																"foto1     maincontent1    maincontent1"
+
+																 "footer1     footer1        footer1";
+}
+
+
+/*---------------------------------------*/
+.nav{
+	grid-area: nav1;
+	background-color: #6a2e06;
+	padding-top: 40px;
+	text-align: center;
+	overflow: hidden;
+
+}
+.nav a {
+	color:  #bf7645;
+	text-decoration: none;
+	padding: 100px 100px;
+	font-family: Courier New;
+}
+.nav a:hover {
+	background: #bf7645;
+	color:  #6a2e06;
+}
+.subnav{
+	grid-area: subnav1;
+	background-color: #bf7645;
+	text-align: center;
+	padding-block: 10px;
+	overflow: hidden;
+
+}
+.subnav a {
+	color: #6a2e06;
+	text-decoration: none;
+	padding: 15px;
+	font-family: Courier New;
+}
+.subnav a:hover {
+	background: #6a2e06;
+	color:#bf7645;
+}
+
+
+
+/*------------------------------------------------*/
+.bloco{
+	grid-area: bloco1;
+	background-color:#523111;
+	margin: 2px;
+	text-align: center;
+	place-content: center;
+	font-family: "IM Fell DW Pica", serif;
+	font-style: italic;
+}
+.foto{
+	grid-area: foto1;
+	background-size: 450px 400px;
+	background-image: url('evermoregrid.png');
+
+	margin: 2px;
+}
+.maincontent{
+	grid-area: maincontent1;
+	background-color:#694521;
+	margin: 2px;
+	text-align: center;
+}
+
+h1{
+	font-family: "IM Fell DW Pica", serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 35pt;
+}
+
+h4{
+	font-family: 'Courier New';
+	font-size: 13pt;
+	padding-left: 7%;
+	width:85%;
+}
+
+/*-------------------------------*/
+
+.footer{
+	grid-area: footer1;
+	background-color:#6a2e06;
+	margin: 2px;
+	padding-top:40px;
+	text-align: center;
+	overflow: hidden;
+}
+.footer a {
+	color:  #bf7645;
+	text-decoration: none;
+	padding: 100px 100px;
+	font-family: Courier New;
+}
+.footer a:hover {
+	background: #bf7645;
+	color:  #6a2e06;
+}

@@ -1,0 +1,183 @@
+
+html {
+	height: auto;
+	width: auto;
+}
+
+
+/* #container {
+	width:auto;
+} */
+
+body{
+	background-color:#8B7D7B;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+/*-------------barra de navegação--------------*/
+
+.nav {
+	text-align: center;
+	background-color: #0f0f0f;
+	padding-block: 30px;
+	overflow: hidden;
+}
+.nav a {
+	color: beige;
+	text-decoration: none;
+	padding: 100px 100px;
+	font-family: Courier New;
+}
+.nav a:hover {
+	background: beige;
+	color: #0f0f0f;
+}
+
+/*--------------barra de navegação de album-----------*/
+
+.subnavalbum {
+	text-align: center;
+	background-color: #37322c;
+	padding-block: 10px;
+	overflow: hidden;
+}
+.subnavalbum a {
+	color: beige;
+	text-decoration: none;
+	padding: 15px;
+	font-family: Courier New;
+}
+.subnavalbum a:hover {
+	background: beige;
+	color: black;
+}
+
+/*-----------------corpo--------*/
+
+.left {
+	width: 100%;
+	height: auto;
+	background-image: url('taytaytay.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 30px 0 40px;
+}
+
+/*------------------escritas-----------------*/
+
+.escrita{
+	text-align: center;
+	font-family: bodoni mt;
+	line-height: 20%;
+}
+#titulo{
+	font-size: 50pt;
+}
+#subtitulo{
+	font-size: 20pt;
+}
+.escritaap{
+	text-align: center;
+	width:50%;
+	font-family: Courier New;
+	/* display:flex; */
+	margin: auto;
+}
+#texto{
+	text-align: center;
+	line-height: 100%;
+	font-size: 15pt;
+}
+
+
+/*-------------roda pé---------*/
+
+
+.footer {
+	text-align: center;
+	background: #0f0f0f;
+	padding-block: 35px;
+	overflow: hidden;
+}
+.footer a {
+	color: beige;
+	text-decoration: none;
+	padding: 100px;
+	font-family: Courier New;
+}
+.footer a:hover{
+background: beige;
+color: #0f0f0f;
+}
+
+/*-----------------------------*/ 
+
+@media (max-width: 1200px) {
+	.nav a, .footer a {
+		padding: 8px 16px;
+		font-size: 0.9rem;
+	}
+	.subnavalbum a {
+		padding: 8px 12px;
+	}
+	.escritaap {
+		width: 80%;
+	}
+	#titulo {
+		font-size: 2rem;
+	}
+	#subtitulo {
+		font-size: 1.2rem;
+	}
+	#texto {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav a, .footer a {
+		padding: 6px 12px;
+		font-size: 0.8rem;
+	}
+	.subnavalbum a {
+		padding: 6px 10px;
+		display:inline-block;
+	}
+	.escritaap {
+		width: 90%;
+	}
+	#titulo {
+		font-size: 1.75rem;
+	}
+	#subtitulo {
+		font-size: 1rem;
+	}
+	#texto {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.nav a, .footer a {
+		padding: 5px 10px;
+		font-size: 0.75rem;
+	}
+	.subnavalbum a {
+		padding: 5px 8px;
+	}
+	.escritaap {
+		width: 100%;
+	}
+	#titulo {
+		font-size: 1.5rem;
+	}
+	#subtitulo {
+		font-size: 0.875rem;
+	}
+	#texto {
+		font-size: 0.75rem;
+	}
+}
