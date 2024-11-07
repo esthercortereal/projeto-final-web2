@@ -1,4 +1,5 @@
 
+
 html {
 	height:auto;
 	width: auto;
@@ -69,7 +70,7 @@ body{
 	font-size: 25pt;
 }
 /*---------------------------------------------*/
-.fotosetextos {
+/* .fotosetextos {
 	font-family: 'Courier New';
 	justify-content: center;
 	text-align: center;
@@ -82,7 +83,7 @@ body{
 .taytay {
 	border-radius: 20px;
 	max-width: 100%;
-}
+} */
 
 /*-----------------------------------------*/ 
 
@@ -185,4 +186,64 @@ color: #0f0f0f;
 	.fotosetextos {
 		width: 100%;
 	}
+}
+
+
+/* ------------------------------------------------ */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card {
+    background-color: #0f0f0f;
+    color: beige;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 20px;
+    min-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: beige;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+  }
+  
+ 
+  .prev {
+    left: 10px; 
+  }
+  
+  .next {
+    right: 10px; 
+  }
+  
+  .carousel-container {
+    padding: 0 50px;
+  }
 }
