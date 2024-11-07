@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: rgb(59, 65, 70);
+}
+input, button, a{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(59, 65, 70);
+}
+
+/* -- */
+
+.login-all{
+    width: 60%;
+    height: 45%;
+    
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 30px;
+}
+
+/* -- */
+
+.left-login{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+}
+#texto-e{
+ 
+
+    transition: ease 0.5s;
+}
+#texto-e:hover{
+    transform: scale(1.1);
+}
+
+/* -- */
+
+.right-login{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: beige;
+    border-bottom-right-radius: 20px;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#email1{
+    display: flex;
+    flex-direction: column;
+}
+#password1{
+    display: flex;
+    flex-direction: column;
+}
+
+div i{
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 9%;
+    top: 39%;
+
+    color: rgb(59, 65, 70);
+}
+
+#input1, #input2{
+    width: 20vw;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    padding-left: 2%;
+    background-color: #FFFFF0;
+    outline: none; /* remove borda que aparece ao clicar */
+}
+
+#save1{
+    margin-top: 5%;
+}
+
+#login{
+    width: 80px;
+    height: 30px;
+    
+    margin: 5%;
+
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFF0;
+
+    transition: 0.5s ease;
+}
+#login:hover{
+    transform: scale(1.2);
+    background-color: silver;
+}
+
+/* -- */
+
+#create{
+   margin-bottom: -10%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   transition: 0.5s ease;
+}
+#create a{
+    text-decoration: none;
+}
+#create a:hover{
+    text-decoration: underline;
+}
+
