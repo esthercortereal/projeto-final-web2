@@ -14,18 +14,17 @@ body{
 	display: grid;
 	width: auto;
 	height: auto;
-	grid-template-columns:      450px 449px 449px;
-	grid-template-rows:   90px
-												 35px
-												400px 
-												400px 
-												90px;
+	grid-template-columns:      450px           449px           449px;
+	grid-template-rows:                                                  90px
+												                         35px
+												                        400px 
+												                        400px 
+												                        90px;
 	grid-template-areas:          "nav1          nav1           nav1"
-																"subnav1       subnav1         subnav1"
-																"bloco1    maincontent1    maincontent1"
-																"foto1     maincontent1    maincontent1"
-
-																 "footer1     footer1        footer1";
+			                    "subnav1       subnav1         subnav1"
+							     "bloco1    maincontent1    maincontent1"
+					            "foto1     maincontent1    maincontent1"
+                                "footer1      footer1         footer1";
 }
 
 
@@ -41,7 +40,7 @@ body{
 .nav a {
 	color: #c3b51d;
 	text-decoration: none;
-	padding: 100px 100px;
+	padding:70px;
 	font-family: Courier New;
 }
 .nav a:hover {
