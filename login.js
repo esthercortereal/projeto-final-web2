@@ -20,11 +20,11 @@ function mostrar(){
 
 const usuarios = [
     { email: "erick@lasalle.com", senha: "senha123" },
-    { email: "usuario2@example.com", senha: "senha456" },
-    { email: "usuario3@example.com", senha: "senha789" }
+    { email: "esther@lasalle.com", senha: "senha456" },
+    { email: "thereza@lasalle.com", senha: "senha789" }
 ];
 
-/
+
 document.querySelector('.form1').addEventListener('submit', function(e) {
     e.preventDefault(); // Impede o envio do formulário para não recarregar a página
 

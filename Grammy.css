@@ -5,9 +5,9 @@ html {
 	width: auto;
 }
 
-/* #container {
+#container {
 	width:100%;
-} */
+}
 
 
 body{
@@ -34,7 +34,16 @@ body{
 	background: beige;
 	color: #0f0f0f;
 }
+.login-link {
+	display: inline-block;
+	margin-left: auto; /* Empurra o login para o lado direito */
+}
 
+.login-icon {
+	width: 24px; /* Tamanho do ícone de login */
+	height: 24px;
+	border-radius: 50%; /* Deixa o ícone circular, se necessário */
+}
 /*-----------------------------------------*/
 
 .left {
@@ -70,7 +79,7 @@ body{
 	font-size: 25pt;
 }
 /*---------------------------------------------*/
-/* .fotosetextos {
+.fotosetextos {
 	font-family: 'Courier New';
 	justify-content: center;
 	text-align: center;
@@ -83,7 +92,7 @@ body{
 .taytay {
 	border-radius: 20px;
 	max-width: 100%;
-} */
+}
 
 /*-----------------------------------------*/ 
 

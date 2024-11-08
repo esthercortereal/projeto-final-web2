@@ -5,9 +5,10 @@
 body{
     width: 100vw;
     height: 100vh;
-    position: relative;
+    /* position: relative; */
+    
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
+    background-color: #8c7d7b;
     color: rgb(59, 65, 70);
 }
 input, button, a{
@@ -15,15 +16,56 @@ input, button, a{
     color: rgb(59, 65, 70);
 }
 
-/* -- */
+/* --------- */
+
+.nav {
+	text-align: center;
+	background-color: #0f0f0f;
+	padding-block: 30px;
+	overflow: hidden;
+}
+.nav a {
+	color: beige;
+	text-decoration: none;
+	padding: 100px 100px;
+	font-family: Courier New;
+}
+.nav a:hover {
+	background: beige;
+	color: #0f0f0f;
+}
+
+
+/*  ----------    */
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+	text-align: center;
+	background: #0f0f0f;
+	padding-block: 30px;
+	overflow: hidden;
+}
+.footer a {
+	color: beige;
+	text-decoration: none;
+	padding: 100px;
+	font-family: Courier New;
+}
+.footer a:hover{
+background: beige;
+color: #0f0f0f;
+}
+
+/*  ----------    */
 
 .login-all{
     width: 60%;
     height: 45%;
-    
     display: flex;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -45,7 +87,6 @@ input, button, a{
 }
 #texto-e{
  
-
     transition: ease 0.5s;
 }
 #texto-e:hover{
@@ -62,7 +103,7 @@ input, button, a{
     justify-content: center;
     align-items: center;
 
-    background-color: beige;
+    background-color: #c2b6b8;
     border-bottom-right-radius: 20px;
 }
 .form1{
