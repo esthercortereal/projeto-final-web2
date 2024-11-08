@@ -43,6 +43,7 @@ body{
 	background-color: #37322c;
 	padding-block: 10px;
 	overflow: hidden;
+	display: none;
 }
 .subnavalbum a {
 	color: beige;
@@ -51,6 +52,25 @@ body{
 	font-family: Courier New;
 }
 .subnavalbum a:hover {
+	background: beige;
+	color: black;
+}
+
+
+.subnavalbum1 {
+	text-align: center;
+	background-color: #37322c;
+	padding-block: 10px;
+	overflow: hidden;
+	/* display: none; */
+}
+.subnavalbum1 a {
+	color: beige;
+	text-decoration: none;
+	padding: 15px;
+	font-family: Courier New;
+}
+.subnavalbum1 a:hover {
 	background: beige;
 	color: black;
 }

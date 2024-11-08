@@ -15,7 +15,6 @@ function mostrar(){
     }
 }
 
-// senha correta ou incorreta
 
 
 const usuarios = [
@@ -26,20 +25,36 @@ const usuarios = [
 
 
 document.querySelector('.form1').addEventListener('submit', function(e) {
-    e.preventDefault(); // Impede o envio do formulário para não recarregar a página
+    e.preventDefault()
 
-    const email = document.getElementById('input1').value;
-    const senha = document.getElementById('input2').value;
+    const email = document.getElementById('input1').value
+    const senha = document.getElementById('input2').value
 
     
     const usuario = usuarios.find(u => u.email === email && u.senha === senha);
 
-    const mensagemDiv = document.getElementById('texto-e');
+    const mensagemDiv = document.getElementById('texto-e')
     if (usuario) {
-        mensagemDiv.textContent = 'Login bem-sucedido!';
-        mensagemDiv.style.color = 'green';
-    } else {
-        mensagemDiv.textContent = 'Email ou senha inválidos.';
-        mensagemDiv.style.color = 'red';
+        mensagemDiv.textContent = 'Login bem-sucedido!'
+        mensagemDiv.style.color = 'green'
+    } 
+    else {
+        mensagemDiv.textContent = 'Email ou senha inválidos.'
+        mensagemDiv.style.color = 'red'
     }
-});
+})
+
+
+ document.querySelector('.form1').addEventListener('submit', (event) => {
+    event.preventDefault(); 
+
+    const nome = document.querySelector('#input0').value;
+    alert(`Seja bem vindo, ${nome}`)
+    
+    const ola = document.querySelector('#ola');
+    ola.style.color = 'with'
+    ola.innerHTML = `Olá, ${nome}`; // Define o texto com "Olá, [nome]"
+
+}); 
+
+

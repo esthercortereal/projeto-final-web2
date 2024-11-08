@@ -34,16 +34,16 @@ body{
 	background: beige;
 	color: #0f0f0f;
 }
-.login-link {
+/* .login-link {
 	display: inline-block;
-	margin-left: auto; /* Empurra o login para o lado direito */
+	margin-left: auto; 
 }
 
 .login-icon {
-	width: 24px; /* Tamanho do ícone de login */
+	width: 24px; 
 	height: 24px;
-	border-radius: 50%; /* Deixa o ícone circular, se necessário */
-}
+	border-radius: 50%; 
+} */
 /*-----------------------------------------*/
 
 .left {
@@ -255,4 +255,4 @@ color: #0f0f0f;
   .carousel-container {
     padding: 0 50px;
   }
-}
+
